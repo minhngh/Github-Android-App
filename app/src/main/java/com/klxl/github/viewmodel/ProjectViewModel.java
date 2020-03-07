@@ -1,8 +1,5 @@
 package com.klxl.github.viewmodel;
 
-import android.app.Application;
-
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -10,7 +7,6 @@ import androidx.lifecycle.ViewModel;
 import com.klxl.github.R;
 import com.klxl.github.data.ProjectRepository;
 import com.klxl.github.data.Result;
-import com.klxl.github.data.model.Project;
 import com.klxl.github.data.model.ProjectInView;
 import com.klxl.github.ui.find.FindResult;
 import com.klxl.github.ui.find.FindState;
@@ -33,8 +29,6 @@ public class ProjectViewModel extends ViewModel {
     private static ProjectViewModel instance;
     private CompositeDisposable compositeDisposable;
 
-    public ProjectViewModel() {}
-
     public static ProjectViewModel getInstance(){
         if (instance == null){
             synchronized (ProjectViewModel.class){
@@ -48,7 +42,7 @@ public class ProjectViewModel extends ViewModel {
 
     private ProjectRepository projectRepository;
 
-    private ProjectViewModel(Application application){
+    private ProjectViewModel(){
         super();
         this.projectRepository = new ProjectRepository();
         compositeDisposable = new CompositeDisposable();
