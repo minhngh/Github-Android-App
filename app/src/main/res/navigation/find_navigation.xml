@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id="@+id/find_navigation"
+    app:startDestination="@id/nav_find">
+
+    <fragment
+        android:id="@+id/nav_find"
+        android:name="com.klxl.github.ui.find.fragment.FindFragment"
+        android:label="@string/find_nav_menu_find"
+        tools:layout="@layout/fragment_find"/>
+    <fragment
+        android:id="@+id/nav_info"
+        android:name = "com.klxl.github.ui.find.fragment.InfoFragment"
+        tools:layout="@layout/fragment_info"/>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.klxl.github.ui.find.fragment.SettingFragment"
+        android:label="@string/find_nav_menu_setting"
+        tools:xml = "@xml/preference_setting"/>
+</navigation>

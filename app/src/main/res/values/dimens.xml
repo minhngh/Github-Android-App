@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name = "find_fragment_padding">16dp</dimen>
+    <dimen name = "btn_login_padding_horizontal">16dp</dimen>
+    <dimen name = "nav_header_find_height">176dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Cài đặt">
+        <SwitchPreference
+            android:key = "save_switch_preference"
+            android:title="@string/preference_save"
+            android:defaultValue="true"/>
+        <Preference
+            android:key="delete_preference"
+            android:title="@string/preference_delete"
+            android:dependency="save_switch_preference"
+            android:summary="@string/preference_delete_summary"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Tùy chọn">
+        <DropDownPreference
+            android:key="drop_down_preference"
+            android:title = "@string/preference_drop_down"
+            android:entries="@array/entries_drop_down_preference"
+            android:entryValues="@array/entryvalues_drop_down_preference"/>
+    </PreferenceCategory>
+</PreferenceScreen>

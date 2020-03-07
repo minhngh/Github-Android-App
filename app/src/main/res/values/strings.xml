@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="prompt_username">Tên người dùng</string>
+    <string name="action_find">Tìm kiếm</string>
+    <string name="invalid_username">Tên người dùng không hợp lệ</string>
+    <string name="app_bar_search">Tìm kiếm repository</string>
+    <string name="wrong_username_message">Sai tên người dùng</string>
+    <string name="time_out_message">Kết nối thất bại. Vui lòng thử lại</string>
+    <string name="find_error_message">Đã có lỗi. Vui lòng thử lại</string>
+    <string name="find_nav_menu_find">Tìm kiếm</string>
+    <string name="find_nav_menu_info">Giới thiệu</string>
+    <string name="find_nav_menu_setting">Cài đặt</string>
+    <string name = "preference_save">Lưu lịch sử tìm kiếm</string>
+    <string name = "preference_delete">Xóa lịch sử</string>
+    <string name = "preference_delete_summary">"Xóa lịch sử tìm kiếm được lưu trữ."</string>
+    <string name = "preference_drop_down">Ngôn ngữ</string>
+    
+    <string-array name="entries_drop_down_preference">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+
+    <string-array name= "entryvalues_drop_down_preference">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
